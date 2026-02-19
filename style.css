@@ -90,11 +90,17 @@ html.theme-dark .theme-icon-sun { display: inline-flex; }
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    height: 70px; 
+    min-height: 72px;
+    padding: 10px 0;
 }
 .logo { font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
+.nav-inner nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
 .nav a { 
-    margin-left: 24px; 
     text-decoration: none; 
     color: #475569; 
     font-size: 14px; 
@@ -102,6 +108,11 @@ html.theme-dark .theme-icon-sun { display: inline-flex; }
     transition: color 0.2s ease;
 }
 .nav a:hover { color: #38bdf8; }
+
+/* Give the CTA slightly more breathing room */
+.nav a.btn-primary {
+    margin-left: 6px;
+}
 
 .nav a:not(.btn-primary) {
     position: relative;
@@ -481,7 +492,7 @@ button:focus-visible {
         align-items: center;
         gap: 10px;
         height: auto;
-        padding: 10px 0;
+        padding: 14px 0 10px;
     }
 
     .nav-inner .logo { grid-area: logo; justify-self: start; }
