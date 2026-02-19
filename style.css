@@ -526,7 +526,12 @@ button:focus-visible {
         padding: 10px 0 8px;
     }
 
-    .nav-inner .logo { grid-area: logo; justify-self: start; }
+    .nav-inner .logo {
+        grid-area: logo;
+        justify-self: start;
+        padding-left: 12px;   /* clearer gap from screen edge */
+        font-size: 18px;      /* slightly smaller on mobile so it doesn’t overpower the nav */
+    }
     .nav-inner .theme-toggle { grid-area: toggle; justify-self: end; }
 
     .nav-inner nav {
