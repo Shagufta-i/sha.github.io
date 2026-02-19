@@ -354,7 +354,7 @@ const navLinks = document.querySelectorAll('.nav a[href^="#"]');
 function setActiveNav(id) {
   navLinks.forEach(link => {
     const target = link.getAttribute('href').slice(1);
-    if (target === id) {
+    if (id && target === id) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -372,7 +372,10 @@ navLinks.forEach(link => {
 
 // If user loads with a hash, reflect it in nav
 if (location.hash && location.hash.length > 1) {
-  setActiveNav(location.hash.slice(1));
+  // Don't underline "About" by default on initial load
+  if (location.hash !== '#about') {
+    setActiveNav(location.hash.slice(1));
+  }
 }
 
 // Scroll-spy: update active link while manually scrolling
@@ -386,6 +389,13 @@ function getHeaderOffset() {
 function updateActiveFromScroll() {
   const offset = getHeaderOffset();
   const y = window.scrollY + offset;
+
+  const firstSection = sections[0];
+  if (firstSection && y < firstSection.offsetTop + 1) {
+    // Still in hero/top area -> no active underline
+    setActiveNav(null);
+    return;
+  }
 
   let currentId = sections[0]?.id;
   sections.forEach(section => {
@@ -408,7 +418,7 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll, { passive: true });
 window.addEventListener('resize', updateActiveFromScroll);
-updateActiveFromScroll();
+// Don't auto-highlight on initial load; scroll handler will take over once user moves
 </script>
 
 </body>

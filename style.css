@@ -90,8 +90,8 @@ html.theme-dark .theme-icon-sun { display: inline-flex; }
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    min-height: 72px;
-    padding: 10px 0;
+    min-height: 80px;
+    padding: 16px 0 14px;
 }
 .logo { font-weight: 800; color: #0f172a; letter-spacing: -0.5px; }
 .nav-inner nav {
@@ -111,7 +111,7 @@ html.theme-dark .theme-icon-sun { display: inline-flex; }
 
 /* Give the CTA slightly more breathing room */
 .nav a.btn-primary {
-    margin-left: 6px;
+    margin-left: 18px;
 }
 
 .nav a:not(.btn-primary) {
@@ -467,7 +467,7 @@ button:focus-visible {
 
     /* Add space so content doesn't hide behind the fixed header */
     body {
-        padding-top: 112px;
+        padding-top: 120px;
     }
 
     /* Prevent horizontal scrolling on small screens */
