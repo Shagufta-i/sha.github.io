@@ -1,9 +1,6 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shagufta Zainab</title>
@@ -19,10 +16,23 @@
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-	  <a href="#now">Now</a>
-
+      <a href="#now">Now</a>
       <a class="btn-primary" href="#contact">Contact Me</a>
     </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="theme-icon theme-icon-moon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+          <path d="M21 14.8A8.8 8.8 0 0 1 9.2 3a7.4 7.4 0 1 0 11.8 11.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="theme-icon theme-icon-sun" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+          <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="sr-only">Toggle color mode</span>
+    </button>
   </div>
 </header>
 
@@ -34,21 +44,44 @@
       <h1>Shagufta Zainab</h1>
       <h3>Aspiring Network Automation Engineer | Building Resilient Digital Connectivity</h3>
       <p class="muted">
-        Final-year Engineering		student passionate about networking, infrastructure reliability, and scalable systems.
+        Final-year Engineering student passionate about networking, infrastructure reliability, and scalable systems.
         Transforming complex connectivity concepts into reliable real-world solutions.
       </p>
 
       <div class="hero-actions">
         <a class="btn-primary" href="resume.pdf" download>Download Resume</a>
-		<a class="btn-outline" href="https://linkedin.com/in/shagufta-zainab-288538274/" target="_blank">View LinkedIn</a>
+        <a class="btn-outline" href="https://linkedin.com/in/shagufta-zainab-288538274/" target="_blank">View LinkedIn</a>
       </div>
     </div>
 
     <div class="hero-right">
       <div class="avatar-wrap">
         <div class="avatar-ring">
-          <img src="me.png" alt="Shagufta Zainab" />
+          <img src="me.png" alt="Portrait of Shagufta Zainab" />
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK SUMMARY -->
+<section class="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat">
+        <div class="stat-kicker">Goal</div>
+        <div class="stat-value">Network Automation</div>
+        <div class="stat-sub muted">Python + networking fundamentals</div>
+      </div>
+      <div class="stat">
+        <div class="stat-kicker">Strengths</div>
+        <div class="stat-value">Network fundamentals</div>
+        <div class="stat-sub muted">CCNA-aligned hands-on practice</div>
+      </div>
+      <div class="stat">
+        <div class="stat-kicker">Open to</div>
+        <div class="stat-value">Internships / Graduate roles</div>
+        <div class="stat-sub muted">Network engineering & automation</div>
       </div>
     </div>
   </div>
@@ -65,7 +98,7 @@
 
     <div class="grid-3">
       <div class="card reveal">Transitioning from ECE fundamentals to Network Automation.</div>
-    <div class="card reveal">Hands-on experience with CCNA-level routing and switching.</div>
+      <div class="card reveal">Hands-on experience with CCNA-level routing and switching.</div>
       <div class="card reveal">Goal: Building infrastructure that quietly supports millions of users.</div>
     </div>
   </div>
@@ -75,43 +108,42 @@
 <section id="skills" class="section">
   <div class="container">
     <h2 class="section-title">Technical Skills & Tools</h2>
-	<p class="section-subtitle">
-  Foundations built on rigorous testing, simulation and hardware understanding.
-</p>
-
+    <p class="section-subtitle">
+      Foundations built on rigorous testing, simulation and hardware understanding.
+    </p>
 
     <div class="grid-3">
-     <div class="card reveal">
+      <div class="card reveal">
         <h4>Networking Core</h4>
-        <ul><p class="muted">
+        <ul class="muted list">
           <li>TCP/IP</li>
           <li>Subnetting</li>
           <li>VLANs</li>
-		  <li>Routing (Default, Static, Dynamic)</li>
+          <li>Routing (Default, Static, Dynamic)</li>
           <li>OSPF</li>
           <li>Switching (L2/L3)</li>
           <li>DHCP, DNS</li>
-        </ul></p>
+        </ul>
       </div>
 
       <div class="card reveal">
         <h4>Tools & Simulation</h4>
-        <ul><p class = "muted">
+        <ul class="muted list">
           <li>Cisco Packet Tracer</li>
-          <li>Wireshark</li>
+          <li>Packet sniffing basics</li>
           <li>Xilinx Vivado</li>
           <li>Arduino IDE</li>
-        </ul></p>
+        </ul>
       </div>
 
-    <div class="card reveal">
+      <div class="card reveal">
         <h4>Programming & Hardware</h4>
-        <ul><p class="muted">
+        <ul class="muted list">
           <li>Python</li>
           <li>Java (Intermediate)</li>
           <li>Verilog HDL</li>
           <li>NodeMCU ESP8266</li>
-        </ul></p>
+        </ul>
       </div>
     </div>
   </div>
@@ -121,47 +153,45 @@
 <section id="projects" class="section light">
   <div class="container">
     <h2 class="section-title">Engineering Projects</h2>
-	<p class="section-subtitle">
-  Practical implementation of networking and hardware concepts.
-</p>
-
+    <p class="section-subtitle">
+      Practical implementation of networking and hardware concepts.
+    </p>
 
     <div class="grid-3">
-     <div class="card reveal">
+      <div class="card reveal">
         <h4>Network Simulation & Routing Labs</h4>
-		<br>
-		<div class="tags">
-		<span>Cisco Packet Tracer</span>
-		<span>VLANs</span>
-		<span>Subnetting</span>
-		<span> TCP/IP</span>
-		</div><br>
-        <p class="muted">Configured and validated enterprise network topologies in Cisco Packet Tracer, implementing VLANs, routing protocols, and IP addressing for end-to-end connectivity.</p>
+        <div class="tags">
+          <span>Cisco Packet Tracer</span>
+          <span>VLANs</span>
+          <span>Subnetting</span>
+          <span>TCP/IP</span>
+        </div>
+        <p class="muted">
+          Configured and validated enterprise network topologies in Cisco Packet Tracer, implementing VLANs, routing protocols, and IP addressing for end-to-end connectivity.
+        </p>
       </div>
 
-     <div class="card reveal">
+      <div class="card reveal">
         <h4>High-Performance RISC-V ALU</h4>
-		<br>
-		<div class="tags">
-		<span>Verilog HDL</span>
-		<span>Xilinx Vivado</span>
-		</div>
-		<br>
-        <p class="muted"><br>Designed a 32-bit ALU achieving 7.8ns delay and improved power efficiency using Brent-kung adder & Vedic Multiplier.</p>
+        <div class="tags">
+          <span>Verilog HDL</span>
+          <span>Xilinx Vivado</span>
+        </div>
+        <p class="muted">
+          Designed a 32-bit ALU achieving 7.8ns delay and improved power efficiency using Brent-kung adder & Vedic Multiplier.
+        </p>
       </div>
 
-     <div class="card reveal">
+      <div class="card reveal">
         <h4>Smart Cradle System</h4>
-		<br>
-		<div class="tags">
-		<span>IOT</span>
-		<span>NodeMCU ESP8266</span>
-		<span>Sensor</span>
-		</div>
-
-		<br>
-
-        <p class="muted">Automated cradle with temperature monitoring and buzzer alerts for enhanced infant safety.</p>
+        <div class="tags">
+          <span>IoT</span>
+          <span>NodeMCU ESP8266</span>
+          <span>Sensors</span>
+        </div>
+        <p class="muted">
+          Automated cradle with temperature monitoring and buzzer alerts for enhanced infant safety.
+        </p>
       </div>
     </div>
   </div>
@@ -170,8 +200,6 @@
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
   <div class="container">
-
-    <!-- HEADER -->
     <div class="section-header">
       <h2 class="section-title">Experience & Milestones</h2>
       <p class="section-subtitle">
@@ -179,51 +207,39 @@
       </p>
     </div>
 
-    <!-- GRID START -->
     <div class="exp-grid">
-
-      <!-- LEFT COLUMN -->
       <div>
         <h3 class="sub">Professional Experience</h3>
 
         <div class="timeline-card reveal">
           <h4>Intern — Simpson & Co Pvt Ltd</h4>
           <span class="muted">June 2025 – Aug 2025</span>
-          <p class="muted"><br>
-         Managed enterprise data using SAP, maintaining accuracy and consistency across records. Identified and resolved discrepancies through structured analysis and documentation. Worked with cross-functional teams to enhance reporting accuracy and streamline workflows, strengthening analytical and communication skills.
+          <p class="muted">
+            Managed enterprise data using SAP, maintaining accuracy and consistency across records. Identified and resolved discrepancies through structured analysis and documentation. Worked with cross-functional teams to enhance reporting accuracy and streamline workflows, strengthening analytical and communication skills.
           </p>
         </div>
-		<br> <br>
 
         <h3 class="sub">Certifications</h3>
         <div class="cert-tags">
-  <span>Cisco Netacad : Introduction to networks</span>
-  <span>Python Dynamic CAD</span>
-  <span>IoT & IIoT</span>
-  
-</div>
-
+          <span>Cisco Netacad: Introduction to Networks</span>
+          <span>Python Dynamic CAD</span>
+          <span>IoT & IIoT</span>
+        </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div>
         <h3 class="sub">Key Achievements</h3>
-
         <div class="achievement-card reveal">🏆 Department Topper (Twice)</div>
         <div class="achievement-card reveal">⚡ HackAIthon 2025 Participant</div>
         <div class="achievement-card reveal">📘 NPTEL (Soft Skills & Personality Development) Top 5%</div>
       </div>
-
-    </div> <!-- exp-grid -->
-
-  </div> <!-- container -->
+    </div>
+  </div>
 </section>
-
 
 <!-- CURRENTLY LEARNING -->
 <section id="now" class="section light">
   <div class="container">
-
     <div class="section-header">
       <h2 class="section-title">Currently Learning</h2>
       <p class="section-subtitle">
@@ -232,7 +248,6 @@
     </div>
 
     <div class="grid-3">
-
       <div class="card reveal">
         <h4>CCNA — Cisco Networking Academy</h4>
         <p class="muted">
@@ -241,7 +256,7 @@
       </div>
 
       <div class="card reveal">
-        <h4>Hands On Practice</h4>
+        <h4>Hands-On Practice</h4>
         <p class="muted">
           Applying core networking concepts in Cisco Packet Tracer, including TCP/IP addressing, subnetting, VLAN configuration, and routing.
         </p>
@@ -253,35 +268,40 @@
           Preparing to explore Python-based network automation and infrastructure reliability concepts.
         </p>
       </div>
-
     </div>
   </div>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="container contact-grid">
     <div>
       <h2>Let's Build Something Resilient</h2>
-	  <br>
       <p class="muted">Open to opportunities in Network Engineering and Automation.</p>
       <p class="muted">📧 <a href="mailto:25sizainab@gmail.com">25sizainab@gmail.com</a></p>
-	  <p class="muted">📞 <a href="tel:+919360444543">+91 9360444543</a></p>
-	  <br>
-	 
-	  <p class="muted">  <a class="btn-outline" href="https://linkedin.com/in/shagufta-zainab-288538274/" target="_blank">Let's Connect</a>
-    </div>
+      <p class="muted">📞 <a href="tel:+919360444543">+91 9360444543</a></p>
 
-    
+      <div class="contact-chips" aria-label="Availability">
+        <span>Internships</span>
+        <span>Graduate roles</span>
+        <span>Remote / On-site</span>
+      </div>
+
+      <div class="contact-actions">
+        <a class="btn-outline" href="https://linkedin.com/in/shagufta-zainab-288538274/" target="_blank" rel="noreferrer">
+          Let's Connect
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer class="footer">
   © 2026 Shagufta Zainab
 </footer>
 
-
 <script>
+// --- Scroll reveal ---
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
@@ -299,9 +319,97 @@ function revealOnScroll() {
 
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll(); // run once on load
+
+// --- Theme toggle ---
+const themeToggle = document.querySelector('.theme-toggle');
+const root = document.documentElement;
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  root.classList.add('theme-dark');
+}
+
+function updateThemeLabel() {
+  if (!themeToggle) return;
+  const isDark = root.classList.contains('theme-dark');
+  themeToggle.setAttribute('aria-label', isDark ? 'Toggle light mode' : 'Toggle dark mode');
+  themeToggle.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+}
+
+updateThemeLabel();
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    root.classList.toggle('theme-dark');
+    const mode = root.classList.contains('theme-dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', mode);
+    updateThemeLabel();
+  });
+}
+
+// --- Active section highlighting in nav ---
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav a[href^="#"]');
+
+function setActiveNav(id) {
+  navLinks.forEach(link => {
+    const target = link.getAttribute('href').slice(1);
+    if (target === id) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+}
+
+// Set active immediately on click (feels snappier)
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const id = link.getAttribute('href').slice(1);
+    setActiveNav(id);
+  });
+});
+
+// If user loads with a hash, reflect it in nav
+if (location.hash && location.hash.length > 1) {
+  setActiveNav(location.hash.slice(1));
+}
+
+// Scroll-spy: update active link while manually scrolling
+let ticking = false;
+
+function getHeaderOffset() {
+  const header = document.querySelector('.nav');
+  return (header?.offsetHeight || 0) + 12;
+}
+
+function updateActiveFromScroll() {
+  const offset = getHeaderOffset();
+  const y = window.scrollY + offset;
+
+  let currentId = sections[0]?.id;
+  sections.forEach(section => {
+    if (section.offsetTop <= y) {
+      currentId = section.id;
+    }
+  });
+
+  if (currentId) setActiveNav(currentId);
+}
+
+function onScroll() {
+  if (ticking) return;
+  ticking = true;
+  window.requestAnimationFrame(() => {
+    updateActiveFromScroll();
+    ticking = false;
+  });
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('resize', updateActiveFromScroll);
+updateActiveFromScroll();
 </script>
 
 </body>
-
 </html>
-
