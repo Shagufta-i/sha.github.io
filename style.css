@@ -226,6 +226,9 @@ html.theme-dark .theme-icon-sun { display: inline-flex; }
 
 .hero .muted {
     margin-bottom: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
 
 .badge { 
@@ -282,8 +285,41 @@ h3 { color: #334155; font-weight: 500; margin-bottom: 14px; font-size: 20px; }
     margin-bottom: 12px;
 }
 
+.card-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 128px; /* title + up to ~2 tag rows so body starts aligned */
+}
+
+.card-head h4 {
+    margin: 0;
+}
+
+.card-head .tags {
+    margin: 0;
+    min-height: 56px; /* reserve space even if tags wrap differently */
+}
+
+.status-card .card-head {
+    min-height: auto;
+}
+
 .card p {
     margin-top: 12px;
+}
+
+/* About highlight cards read better as centered callouts than justified copy */
+#about .grid-3 .card {
+    text-align: center;
+    justify-content: center;
+}
+
+/* Card summaries look cleaner left-aligned than justified */
+.card p {
+    text-align: left;
+    text-justify: auto;
+    hyphens: none;
 }
 
 .status-card h4 {
@@ -293,10 +329,10 @@ h3 { color: #334155; font-weight: 500; margin-bottom: 14px; font-size: 20px; }
 /* Cleaner paragraph flow (no forced hyphenation) */
 .section-sub,
 .section-subtitle,
-.card p,
 .timeline-card p {
-    text-align: left;
-    hyphens: none;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
     text-wrap: pretty;
 }
 
@@ -1508,4 +1544,40 @@ html.theme-dark .cert-tags span {
     background: rgba(15, 23, 42, 0.9);
     color: #e5e7eb;
     border-color: #1e293b;
+}
+
+/* --- Card layout consistency (final overrides) --- */
+.card-head {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 128px;
+}
+
+.card-head h4 {
+    margin: 0;
+}
+
+.card-head .tags {
+    margin: 0;
+    min-height: 56px;
+}
+
+.status-card .card-head {
+    min-height: auto;
+}
+
+.card p {
+    margin-top: 12px;
+    text-align: left;
+    text-justify: auto;
+    hyphens: none;
+}
+
+/* Keep these two project sections justified for cleaner block alignment */
+#projects .card p,
+#other-projects .card p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
 }
